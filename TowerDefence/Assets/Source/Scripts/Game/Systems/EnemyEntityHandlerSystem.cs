@@ -4,6 +4,7 @@ using Assets.Source.Scripts.UI.LevelEndPanel;
 using ModestTree;
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using Zenject;
 
 namespace Assets.Source.Scripts.Game.Systems
@@ -45,11 +46,14 @@ namespace Assets.Source.Scripts.Game.Systems
             _contollers.RemoveWithConfirm(controller.Name);
             _gameData.AddCurrency(controller.Reward);
 
+			CheckWavesEnded();
+		}
+
+        public void CheckWavesEnded()
+        {
 			if (_contollers.Count <= 0 && _enemySpawnSystem.WavesEnded)
-            {
-                _levelEndController.Victory();
-            }
-        }
+				_levelEndController.Victory();
+		}
 
         public EnemyController GetController(string name)
 		{

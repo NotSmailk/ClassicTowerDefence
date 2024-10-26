@@ -16,6 +16,7 @@ namespace Assets.Source.Scripts.Game.Systems
 
         [Inject] private AvailableLevelsData _levelConfig;
         [Inject] private IEnemiesFactory _enemiesFactory;
+        [Inject] private EnemyEntityHandlerSystem _enemyEntityHandlerSystem;
 
         private CountdownTimer _countdownTimer;
         private int _currentWaveIndex;
@@ -72,6 +73,7 @@ namespace Assets.Source.Scripts.Game.Systems
                     if (_levelConfig.CurrentLevel.Waves.Length <= ++_currentWaveIndex)
 					{
 						WavesEnded = true;
+						_enemyEntityHandlerSystem.CheckWavesEnded();
 						return;
 					}
 
