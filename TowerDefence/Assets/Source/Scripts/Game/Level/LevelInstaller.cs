@@ -1,4 +1,3 @@
-using Assets.Source.Scripts.Assets;
 using Assets.Source.Scripts.Data;
 using Assets.Source.Scripts.Factories;
 using Assets.Source.Scripts.Factories.Projectiles;
@@ -13,9 +12,8 @@ using Zenject;
 
 namespace Assets.Source.Scripts.Game
 {
-    public class LevelInstaller : MonoInstaller
+	public class LevelInstaller : MonoInstaller
     {
-        [SerializeField] private PlayerDataConfig _playerConfig;
         [SerializeField] private Transform _tileContent;
         [SerializeField] private Transform _enemiesContent;
         [SerializeField] private Transform _towersContent;
@@ -26,18 +24,13 @@ namespace Assets.Source.Scripts.Game
         [SerializeField] private LevelEndView _levelEndView;
 
         [Inject] private TilesDataConfig _tilesConfig;
+        [Inject] private PlayerDataConfig _playerDataConfig;
 
         public override void InstallBindings()
         {
-            InstallConfigs();
             InstallFactories();
             InstallSystems();
             InstallUI();
-        }
-
-        private void InstallConfigs()
-        {
-            Container.Bind<PlayerDataConfig>().FromScriptableObject(_playerConfig).AsSingle();
         }
 
         private void InstallSystems()
@@ -63,7 +56,7 @@ namespace Assets.Source.Scripts.Game
         {
             Container.BindInterfacesAndSelfTo<BuildTowerPanelController>().AsSingle().WithArguments(_buildTowerPanelView, new BuildTowerPanelModel());
             Container.BindInterfacesAndSelfTo<TowerUpgradePanelController>().AsSingle().WithArguments(_upgradePanelView, new TowerUpgradePanelModel());
-            Container.BindInterfacesAndSelfTo<GameDataController>().AsSingle().WithArguments(_gameDataView, new GameDataModel(_playerConfig)).NonLazy();
+            Container.BindInterfacesAndSelfTo<GameDataController>().AsSingle().WithArguments(_gameDataView, new GameDataModel(_playerDataConfig)).NonLazy();
             Container.BindInterfacesAndSelfTo<LevelEndController>().AsSingle().WithArguments(_levelEndView, new LevelEndModel()).NonLazy();
         }
     }

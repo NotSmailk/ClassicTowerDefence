@@ -12,7 +12,7 @@ namespace Assets.Source.Scripts.Entities.Towers.MachineGun
 			Upgrades = config.Upgrades;
             DetectionRange = config.Radius;
             Buffer = new UnityEngine.Collider[1];
-            ProjectileSpeed = 1f;
+            ProjectileSpeed = 3f;
             EnemyHitCount = config.EnemyCount;
             WeaponId = config.WeaponId;
         }

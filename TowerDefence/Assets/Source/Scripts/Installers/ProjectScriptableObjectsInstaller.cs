@@ -11,6 +11,7 @@ namespace Assets.Source.Scripts.Installers
         [SerializeField] private AvailableTowersData _availableTowers;
         [SerializeField] private AvailableLevelsData _availableLevels;
         [SerializeField] private SceneNamesData _sceneNamesData;
+        [SerializeField] private PlayerDataConfig _playerDataConfig;
 
 		public override void InstallBindings()
         {
@@ -18,6 +19,7 @@ namespace Assets.Source.Scripts.Installers
             Container.Bind<AvailableTowersData>().FromScriptableObject(_availableTowers).AsSingle().Lazy();
             Container.Bind<AvailableLevelsData>().FromScriptableObject(_availableLevels).AsSingle().Lazy();
             Container.Bind<SceneNamesData>().FromScriptableObject(_sceneNamesData).AsSingle().Lazy();
+            Container.Bind<PlayerDataConfig>().FromScriptableObject(_playerDataConfig).AsSingle().Lazy();
         }
     }
 }

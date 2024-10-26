@@ -16,3 +16,4 @@ MonoBehaviour:
   _availableTowers: {fileID: 11400000, guid: 78ca45d0c2fbed94684d5c6f3a1cb7e1, type: 2}
   _availableLevels: {fileID: 11400000, guid: acb7c9d8b0e63264eaa9ed7607411681, type: 2}
   _sceneNamesData: {fileID: 11400000, guid: 878448f8b0238754d8a609c93b9ce630, type: 2}
+  _playerDataConfig: {fileID: 11400000, guid: ef6e77065b513ea4891896f9236db84b, type: 2}

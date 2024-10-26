@@ -23,11 +23,11 @@ namespace Assets.Source.Scripts.Entities.Projectiles
 
 		public override IEnumerator Lifetime()
 		{
-			Vector3 delta = (targetPosition - transform.position) / projectileSpeed;
+			float delta = Vector3.Distance(targetPosition, transform.position) / projectileSpeed;
 
-			while (Vector3.Distance(transform.position, targetPosition) <= projectileSpeed)
+			while (Vector3.Distance(transform.position, targetPosition) > 0f)
 			{
-				transform.position += delta;
+				transform.position = Vector3.MoveTowards(transform.position, targetPosition, delta * 10 * Time.deltaTime);
 				yield return null;
 			}
 

@@ -4,17 +4,12 @@ using Assets.Source.Scripts.Factories.Towers;
 using Assets.Source.Scripts.UI.BuildTowerPanel;
 using Assets.Source.Scripts.UI.GameDataPanel;
 using Assets.Source.Scripts.UI.TowerUpgradePanel;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UnityEngine;
 using Zenject;
 
 namespace Assets.Source.Scripts.Game.Systems
 {
-    public class TowerPurchaseSystem
+	public class TowerPurchaseSystem
     {
         [Inject] private BuildTowerPanelController _buildTower;
         [Inject] private TowerUpgradePanelController _towerUpgrade;

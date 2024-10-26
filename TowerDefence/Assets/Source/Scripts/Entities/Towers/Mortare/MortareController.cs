@@ -53,7 +53,7 @@ namespace Assets.Source.Scripts.Entities.Towers.Mortare
 					shootCooldown.Stop();
 					var projectile = projectileFactory.Get(_model.WeaponId);
 					projectile.Launch(_model, _view.Tower.position, collisionPoint);
-					shootCooldown.Start(1f);
+					shootCooldown.Start(1f / _model.Firerate);
 				}
 
 				shootCooldown.Tick(Time.deltaTime);

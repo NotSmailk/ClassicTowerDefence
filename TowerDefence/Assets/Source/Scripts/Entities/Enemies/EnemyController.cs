@@ -26,7 +26,7 @@ namespace Assets.Source.Scripts.Entities.Enemies
 			set => view.name = value;
 		}
 		public int Reward => model.reward;
-		public Vector3 Velocity => -view.transform.forward * model.speed;
+		public Vector3 Velocity => (view.transform.forward - view.transform.position).normalized * model.speed;
 		public Vector3 Position => view.transform.position;
 		public bool Alive => model.healthpoints > 0;
 

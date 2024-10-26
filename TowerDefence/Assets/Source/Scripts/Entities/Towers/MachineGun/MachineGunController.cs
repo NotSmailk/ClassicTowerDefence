@@ -1,4 +1,5 @@
 ﻿using Assets.Source.Scripts.Entities.Enemies;
+using Assets.Source.Scripts.Utilities;
 using UnityEngine;
 using Zenject;
 
@@ -29,25 +30,16 @@ namespace Assets.Source.Scripts.Entities.Towers.MachineGun
 				if (enemy == null)
 					return;
 
-				Vector3 targetVelocity = enemy.Velocity;
-				Vector3 targetPosition = target.transform.position;
+				float distance = Vector3.Distance(_view.transform.position, enemy.Position);
+				Vector3 targetCenter = AimAssist.FirstOrderIntercept(_view.transform.position, Vector3.zero, _model.ProjectileSpeed, enemy.Position, enemy.Velocity);
 
-				Vector3 turretPosition = _view.Tower.position;
-				Vector3 turretVelocity = _view.Tower.forward * _model.ProjectileSpeed;
-
-				Vector3 relativePos = targetPosition - turretPosition;
-				Vector3 relativeVelocity = targetVelocity - turretVelocity;
-
-				float timeToCollide = Vector3.Dot(relativePos, relativeVelocity) / relativeVelocity.sqrMagnitude;
-				Vector3 collisionPoint = targetPosition + targetVelocity * timeToCollide;
-
-				_view.RotateTowerTo(collisionPoint);
+				_view.RotateTowerTo(targetCenter);
 
 				if (shootCooldown.Over)
 				{
 					shootCooldown.Stop();
 					var projectile = projectileFactory.Get(_model.WeaponId);
-					projectile.Launch(_model, _view.Tower.position, collisionPoint);
+					projectile.Launch(_model, _view.Tower.position, targetCenter);
 					shootCooldown.Start(1f / _model.Firerate);
 				}
 

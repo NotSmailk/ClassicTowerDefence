@@ -1,13 +1,8 @@
 ﻿using Assets.Source.Scripts.Data;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Assets.Source.Scripts.Entities.Towers.Sniper
 {
-    public class SniperModel : TowerModel
+	public class SniperModel : TowerModel
 	{
 		public SniperModel(TowerDataConfig config)
 		{
@@ -19,6 +14,7 @@ namespace Assets.Source.Scripts.Entities.Towers.Sniper
 			Buffer = new UnityEngine.Collider[1];
 			EnemyHitCount = config.EnemyCount;
 			WeaponId = config.WeaponId;
+			ProjectileSpeed = 5f;
 		}
 	}
 }

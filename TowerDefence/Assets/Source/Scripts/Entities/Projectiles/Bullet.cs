@@ -28,14 +28,15 @@ namespace Assets.Source.Scripts.Entities.Projectiles
 
 		public override IEnumerator Lifetime()
 		{
-			Vector3 delta = (targetPosition - transform.position) * projectileSpeed;
+			float delta = Vector3.Distance(targetPosition, transform.position) * projectileSpeed;
 			CountdownTimer timer = new CountdownTimer(duration);
 
 			while (!timer.Over)
 			{
-				if (Physics.SphereCast(transform.position, _sphereCollider.radius, transform.position, out RaycastHit hit, targetMask))
+				var colliders = Physics.OverlapSphere(transform.position, _sphereCollider.radius, targetMask);
+				if (colliders.Length > 0)
 				{
-					if (hit.collider.gameObject.TryGetComponent(out EnemyView view))
+					if (colliders[0].gameObject.TryGetComponent(out EnemyView view))
 					{
 						var controller = enemies.GetController(view.name);
 						controller.ApplyDamage(damage);
@@ -47,7 +48,7 @@ namespace Assets.Source.Scripts.Entities.Projectiles
 					}
 				}
 
-				transform.position += delta * Time.deltaTime;
+				transform.position += transform.forward * delta * Time.deltaTime;
 				timer.Tick(Time.deltaTime);
 				yield return null;
 			}

@@ -1,15 +1,11 @@
 ﻿using Assets.Source.Scripts.Entities.Towers;
 using Assets.Source.Scripts.UI.LevelEndPanel;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Zenject;
 
 namespace Assets.Source.Scripts.Game.Systems
 {
-    public class TowerEntityHandlerSystem : ITickable
+	public class TowerEntityHandlerSystem : ITickable
     {
         private List<TowerController> _controllers;
 

@@ -1,5 +1,6 @@
 ﻿using Assets.Source.Scripts.Data;
 using System;
+using Unity.VisualScripting.FullSerializer;
 
 namespace Assets.Source.Scripts.UI.GameDataPanel
 {
