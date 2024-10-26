@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ada8fd59809b344db723d2425cced65, type: 3}
+  m_Name: ProjectScriptableObjectsInstaller
+  m_EditorClassIdentifier: 
+  _tilesConfig: {fileID: 11400000, guid: 88297946951e44d42ba9b4f2007faec5, type: 2}
+  _availableTowers: {fileID: 11400000, guid: 78ca45d0c2fbed94684d5c6f3a1cb7e1, type: 2}
+  _availableLevels: {fileID: 11400000, guid: acb7c9d8b0e63264eaa9ed7607411681, type: 2}
+  _sceneNamesData: {fileID: 11400000, guid: 878448f8b0238754d8a609c93b9ce630, type: 2}

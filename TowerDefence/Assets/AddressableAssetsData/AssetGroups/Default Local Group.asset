@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 9ddef2d6885d9e3408a21417ad9d8c77
+  m_SerializeEntries:
+  - m_GUID: 06277f8ad4a9d384dbd979a7459f8d7b
+    m_Address: TilePathLeft
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 09a1447af129e9e42ac3b5ac62b0fe9d
+    m_Address: Bullet
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 247773ce0c55f494c9bff0f1d4e6126d
+    m_Address: DefaultTIle
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 2ada4664955d6624d9a858e9e21e1200
+    m_Address: Mortare
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 3153951c744b6714893868f86a077167
+    m_Address: BuildTowerButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 4df33b32aeea9e64b956edd1f978d45f
+    m_Address: Sniper
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50529c02bcdef704cb5ec53fe87b77eb
+    m_Address: TilePathDown
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 50b89d0241e99ab4e8d460ecbff61b47
+    m_Address: Tesla
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 530220d2d50108942b61af93369153b8
+    m_Address: BugClass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 54e95302c29b5fe4fbdf9148867bd9ae
+    m_Address: TyrantClass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 695252d61019f00429a1a4a9ed60287b
+    m_Address: LevelButton
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 88d55afbaa4af014c9d2ffc05e3f7141
+    m_Address: TigerClass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 94e0d63e8d1e6c54e9ed7cf61528b6bf
+    m_Address: TilePathRight
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 9989c49a8d5119d4cb07489325bdb437
+    m_Address: TilePathUp
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a23e0ad093ec94f4cb4c160ab289bdaf
+    m_Address: Laser
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: aecb3b787e031f64e809c23c3bf105c9
+    m_Address: PlayerTile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: b24bbba010a77904a907380325f3d680
+    m_Address: EnemyBaseTile
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c45ee30ebc7e5154ca07634343953190
+    m_Address: SpiderClass
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d1299944671a8c64d94fdee7a6abb815
+    m_Address: Shell
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: d34bf93a5573e2a409fe9159ee65bf1e
+    m_Address: Machinegun
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c8d9d6be16ce94e4ea09c78cd1e55eb0, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: ef5e26092a3155044a91e02cdc0274a0, type: 2}
+    - {fileID: 11400000, guid: 252ba69aef045c7449f5546e1fdfc7d9, type: 2}

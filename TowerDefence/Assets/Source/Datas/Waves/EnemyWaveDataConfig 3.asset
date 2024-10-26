@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 660086aaee04f514f8c4a9d0681819c5, type: 3}
+  m_Name: EnemyWaveDataConfig 3
+  m_EditorClassIdentifier: 
+  <Details>k__BackingField:
+  - <Data>k__BackingField: {fileID: 11400000, guid: 185d681fadb0591448fe9784f440f903, type: 2}
+    <Amount>k__BackingField: 5
+  - <Data>k__BackingField: {fileID: 11400000, guid: 4af96114a8817de448bcf00d79c9b614, type: 2}
+    <Amount>k__BackingField: 3
+  - <Data>k__BackingField: {fileID: 11400000, guid: 4088e0f4511afde48a25c1b0acf168f0, type: 2}
+    <Amount>k__BackingField: 2
+  - <Data>k__BackingField: {fileID: 11400000, guid: 643595911d79ad942928aa7764f30c30, type: 2}
+    <Amount>k__BackingField: 1
+  <Cooldown>k__BackingField: 1

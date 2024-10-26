@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14ebad36a4df34542a68fb7f9caa9b55, type: 3}
+  m_Name: Tesla
+  m_EditorClassIdentifier: 
+  <Id>k__BackingField: Tesla
+  <WeaponId>k__BackingField: Laser
+  <Icon>k__BackingField: {fileID: 0}
+  <Damage>k__BackingField: 2
+  <Radius>k__BackingField: 1
+  <Firerate>k__BackingField: 1
+  <EnemyCount>k__BackingField: 3
+  <Price>k__BackingField: 20
+  <Upgrades>k__BackingField:
+  - {fileID: 11400000, guid: e983473e91d31da42b56cce09e3e5c97, type: 2}
+  - {fileID: 11400000, guid: e3a18041d0298be4bb5fb4f241ff2f48, type: 2}
+  - {fileID: 11400000, guid: 746caeb4535dc2b4abab259de4eac2f7, type: 2}
+  - {fileID: 11400000, guid: bd0faa44dad7c6645b163f19a1af8a45, type: 2}
+  - {fileID: 11400000, guid: 479a2e3500c80ab43a34ef902f665076, type: 2}
