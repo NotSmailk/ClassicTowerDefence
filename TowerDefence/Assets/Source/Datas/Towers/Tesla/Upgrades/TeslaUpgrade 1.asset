@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecb70560012517041bcb41a44e39ebf5, type: 3}
   m_Name: TeslaUpgrade 1
   m_EditorClassIdentifier: 
-  _data:
-    _price: 0
-    _damageIncreaseValue: 0
-    _rangeIncreaseValue: 0
-    _firerateIncreaseValue: 0
+  <Price>k__BackingField: 20
+  <DamageIncreaseValue>k__BackingField: 1
+  <RangeIncreaseValue>k__BackingField: 1
+  <FirerateIncreaseValue>k__BackingField: 1
